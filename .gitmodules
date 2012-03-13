@@ -1,0 +1,3 @@
+[submodule "lib/Dartmine"]
+	path = lib/Dartmine
+	url = git@github.com:amatiasq/Dartmine.git

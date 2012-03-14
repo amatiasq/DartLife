@@ -1,0 +1,23 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+case $1 in
+
+	test)
+		dart specs/life.test.dart
+		;;
+
+	js-test)
+		frogc specs/life.test.dart
+		;;
+
+	run)
+		dart src/main.dart
+		;;
+
+	js)
+		frogc src/main.dart
+		;;
+
+esac

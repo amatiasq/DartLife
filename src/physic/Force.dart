@@ -1,6 +1,3 @@
-//#library('bio.physic');
-//#import('Vector.dart');
-
 class Force {
 	Vector _direction;
 	double _strength;
@@ -23,7 +20,7 @@ class Force {
 
 
 	num get direction() => _direction.angle;
-	    set direction(num value) => _direction = new Vector.fromAngle(valueb);
+	    set direction(num value) => _direction = new Vector.fromAngle(value);
 	
 	num get radians() => _direction.radians;
 	    set radians(num value) => _direction = new Vector.fromRadians(value);

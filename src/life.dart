@@ -1,7 +1,10 @@
 #library('life');
 
-#source('physic/Vector.dart');
+#source('math/Vector.dart');
+#source('math/Geometry.dart');
+
 #source('physic/Force.dart');
+#source('physic/Physic.dart');
 
 num pow(num base, int exponent) {
 	var op = 1;

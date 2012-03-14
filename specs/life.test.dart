@@ -1,8 +1,14 @@
 #library('life:tests');
 
+#import('../lib/Dartmine/src/dartmine.dart');
 #import('../src/life.dart');
 
+#source('math/Vector.dart');
+
 main() {
+	VectorTest();
+
+
 	var temp = new Vector(1, 2);
 	print(temp === new Vector(1, 2));
 

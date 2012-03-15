@@ -5,22 +5,22 @@ case $job in
 
 
 	test)
-		dart specs/life.test.dart
+		dart test/life.test.dart
 		;;
 
 
 	js-test)
-		frogc specs/life.test.dart
+		frogc test/life.test.dart
 		;;
 
 
 	run)
-		dart src/main.dart
+		dart lub/main.dart
 		;;
 
 
 	js)
-		frogc src/main.dart
+		frogc lib/main.dart
 		;;
 
 

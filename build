@@ -1,23 +1,27 @@
 #!/bin/bash
-
 cd $(dirname $0)
+job="$1" ; if [ -z "$job" ] ; then job="test" ; fi
+case $job in
 
-case $1 in
 
 	test)
 		dart specs/life.test.dart
 		;;
 
+
 	js-test)
 		frogc specs/life.test.dart
 		;;
+
 
 	run)
 		dart src/main.dart
 		;;
 
+
 	js)
 		frogc src/main.dart
 		;;
+
 
 esac

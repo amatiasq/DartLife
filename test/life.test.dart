@@ -1,7 +1,7 @@
 #library('life:tests');
 
-#import('../lib/Dartmine/src/dartmine.dart');
-#import('../src/life.dart');
+#import('../deps/Dartmine/src/dartmine.dart');
+#import('../lib/life.dart');
 
 #source('math/Vector.dart');
 

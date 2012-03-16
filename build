@@ -1,6 +1,13 @@
-#!/bin/bash
+#!/bin/sh -e
+
 cd $(dirname $0)
-job="$1" ; if [ -z "$job" ] ; then job="test" ; fi
+job="$1" ; [ "$job" ] || job="test"
+
+function downloadBinary() {
+	wget -q -O "deps/bin/$1" "https://raw.github.com/amatiasq/Bin/master/$1"
+	chmod +x "deps/bin/$1"
+}
+
 case $job in
 
 
@@ -21,6 +28,18 @@ case $job in
 
 	js)
 		frogc lib/main.dart
+		;;
+
+
+	copyright)
+		deps/bin/copyright dart
+		;;
+
+
+	deps)
+		mkdir deps/bin
+		downloadBinary copyright
+		git submodule update
 		;;
 
 

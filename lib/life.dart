@@ -1,6 +1,9 @@
 #library('life');
 
-#source('math/Vector.dart');
+#source('math/vector.dart');
+#source('math/rectangle.dart');
+
+/*
 #source('math/Geometry.dart');
 
 #source('physic/Force.dart');
@@ -14,7 +17,12 @@ num pow(num base, int exponent) {
 
 	return op;
 }
+*/
 
+void main() {
+	var vec = new Rectangle(1.5, 5.1, 3, 4);
+	print(vec);
+}
 
 /*
 int main() {
